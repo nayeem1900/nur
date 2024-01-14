@@ -16,9 +16,9 @@
 
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Instituions
+								Solutions
 							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							{{--<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="{{route('ibch')}}">Islami Bank Central Hospital</a></li>
 
 
@@ -31,41 +31,46 @@
 								<li><a class="dropdown-item" href="#">Islami Bank Mohila Madrasha</a></li>
 								<li><hr class="dropdown-divider">Technical Education</li>
 								<li><a class="dropdown-item" href="#">Islami Bank Institute of Technology,Chottogram</a></li>
-							</ul>
+							</ul>--}}
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Prespectives</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Support</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Community</a>
 						</li>
 
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								About US
 							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="{{route('atglance')}}">At a Glance</a></li>
-								<li><hr class="dropdown-divider">Organizational Structure</li>
+							{{--<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-								<li><a class="dropdown-item" href="{{route('hospitalcommittee')}}">Hospital Committee</a></li>
-								<li><a class="dropdown-item" href="{{route('educationcommittee')}}">IBF Education,Health Education & Social Work Committee</a></li>
-								<li><hr class="dropdown-divider"></li>
 
 								<li><a class="dropdown-item" href="#">Corporate Inpormation</a></li>
 
-							</ul>
+							</ul>--}}
 						</li>
 
 
-						<li class="nav-item">
-							<a class="nav-link" href="#">Media Room</a>
-						</li>
+						{{--
 						<li class="nav-item">
 							<a class="nav-link" href="{{route('etender')}}">Etender</a>
-						</li>
+						</li>--}}
 
 
-						<li class="nav-item">
+						{{--<li class="nav-item">
 							<a class="nav-link" href="#">Career</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="{{route('contact')}}">Contact Us</a>
-						</li>
+						</li>--}}
 
 
 					</ul>

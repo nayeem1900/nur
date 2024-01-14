@@ -5,21 +5,32 @@
 
             <!--Marquee part-->
             <div class ="1">
+                <nav class="navbar navbar-red bg-red">
+                    <a class="navbar-brand"><font color="white">Automated Test Equipment</font></a>
+                    <form class="form-inline">
 
+
+                        <button class="btn btn-outline-success my-2 my-sm-0"><a href=""><font color="white">Learn More</font> </a></button>
+                    </form>
+                </nav>
 
             </div>
-            <marquee behavior="scroll" direction="left">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</marquee>
+           {{-- <marquee behavior="scroll" direction="left">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</marquee>--}}
 
+<div class="2">
+    <strong>About Us</strong>
+    <p>W360 is a full-service engineering services provider rooted in a deep history of industry experience. We specialize in automotive testing, design and development, and have a wealth of knowledge to offer. We pride ourselves on being a one-stop shop for all of your engineering needs, and are dedicated to providing you with tailored solutions and best in class customer service.</p>
 
+</div>
             <!----slider section--->
-@include('frontend.layouts.slider')
+{{--@include('frontend.layouts.slider')--}}
 
             <!--Contact us-->
 
-            <section>
-                <strong>About Us</strong>
-                <p>Islami Bank Foundation (IBF) is a social welfare oriented organization created by Islami Bank Bangladesh Limited for the uplift and emancipation of the helpless and downtrodden people of the society.</p>
-            </section>
+          {{--  <section>
+
+                <p>W360 is a full-service engineering services provider rooted in a deep history of industry experience. We specialize in automotive testing, design and development, and have a wealth of knowledge to offer. We pride ourselves on being a one-stop shop for all of your engineering needs, and are dedicated to providing you with tailored solutions and best in class customer service.</p>
+            </section>--}}
 
             <!--Middle-->
             <section class="middle">
