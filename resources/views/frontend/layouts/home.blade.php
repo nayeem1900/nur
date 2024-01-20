@@ -33,7 +33,7 @@
             </section>--}}
 
             <!--Middle-->
-            <section class="middle">
+{{--            <section class="middle">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -70,7 +70,7 @@
 
             <!--Important LInk-->
 
-            <section>
+   --}}         {{--<section>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
 
-            </section>
+            </section>--}}
             <!--Footer Part-->
 
 @endsection

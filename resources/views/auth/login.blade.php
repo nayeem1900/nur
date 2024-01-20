@@ -277,7 +277,8 @@
 
         <!-- Icon -->
         <div class="fadeIn first">
-            <img src="{{asset('public/frontend/images/logo.png')}}" id="icon" alt="User Icon" />
+            Login
+           {{-- <img src="{{asset('public/frontend/images/logo.png')}}" id="icon" alt="User Icon" />--}}
         </div>
 
         <!-- Login Form -->

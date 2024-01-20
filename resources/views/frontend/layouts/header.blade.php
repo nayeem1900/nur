@@ -14,63 +14,57 @@
 							<a class="nav-link active" aria-current="page" href="{{route('index')}}">Home</a>
 						</li>
 
+						<li class="nav-item">
+							<a class="nav-link" href="">About US</a>
+						</li>
+						{{--<li class="nav-item">
+							<a class="nav-link" href="">Automated Test Equipment</a>
+						</li>--}}
+
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Solutions
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Service
 							</a>
-							{{--<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="{{route('ibch')}}">Islami Bank Central Hospital</a></li>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Service overview </a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Inspection</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Test&Measurment</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Support</a></li>
 
+								{{--<li><hr class="dropdown-divider"><strong style="padding-left: 10px;background-color:green;opacity: 1;">Organizational Structure</strong></li>
+								<li><a class="dropdown-item" href="{{route('foundationcommittee')}}">Foundation Committees</a></li>
+								<li><a class="dropdown-item" href="{{route('executivecommittee')}}">Executive Committee</a></li>
+								<li><a class="dropdown-item" href="{{route('auditcommittee')}}">Audit Committee</a></li>
+								<li><a class="dropdown-item" href="{{route('hospitalcommittee')}}">Hospital Committee</a></li>
+								<li><a class="dropdown-item" href="{{route('communityhospitalcommittee')}}">Community Hospital Committee</a></li>
+								<li><a class="dropdown-item" href="{{route('communityhospitalboard')}}">Islami Bank Community Hospitals Board</a></li>
+								<li><a class="dropdown-item" href="">Executive Committee of Islami Bank Health Educational Institutions</a></li>
+								<li><a class="dropdown-item" href="{{route('healtheducationcommittee')}}">Education,Health Education & Social Work Committee</a></li>
+--}}
 
-								<li><hr class="dropdown-divider">Health Education</li>
-								<li><a class="dropdown-item" href="#">Islami Bank Medical College Rajsahi</a></li>
-
-								<li><hr class="dropdown-divider">Generala Education</li>
-								<li><a class="dropdown-item" href="http://ibiscdhaka.com">Islami Bank International School & College</a></li>
-
-								<li><a class="dropdown-item" href="#">Islami Bank Mohila Madrasha</a></li>
-								<li><hr class="dropdown-divider">Technical Education</li>
-								<li><a class="dropdown-item" href="#">Islami Bank Institute of Technology,Chottogram</a></li>
-							</ul>--}}
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Products</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Prespectives</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Support</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Community</a>
+							</ul>
 						</li>
 
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								About US
+								Solutions
 							</a>
-							{{--<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Aerospace</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Automotive</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Manufacturing-B2B</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> Industrial</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> PCB Design & Development Support</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> Proto Product Development Support</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> Portable Test System, Equipment development</a></li>
 
 
-								<li><a class="dropdown-item" href="#">Corporate Inpormation</a></li>
 
-							</ul>--}}
-						</li>
-
-
-						{{--
-						<li class="nav-item">
-							<a class="nav-link" href="{{route('etender')}}">Etender</a>
-						</li>--}}
-
-
-						{{--<li class="nav-item">
-							<a class="nav-link" href="#">Career</a>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{route('contact')}}">Contact Us</a>
-						</li>--}}
+							<a class="nav-link" href="">Contract US</a>
+                                                </li>
 
 
 					</ul>
@@ -80,10 +74,7 @@
 		</nav>
 
 
-
 	</div>
-
-
 
 
 
