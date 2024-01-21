@@ -24,7 +24,7 @@ Route::get('ibmoh', 'Frontend\FrontendController@ibmoh')->name('ibmoh');
 Route::get('ibhmugdha', 'Frontend\FrontendController@ibhmugdha')->name('ibhmugdha');
 Route::get('ibh_luxmipur', 'Frontend\FrontendController@ibhluxmipur')->name('ibh_luxmipur');
 Route::get('ibch_manikgonj', 'Frontend\FrontendController@ibch_manikgonj')->name('ibchmanikgonj');
-Route::get('at_glance', 'Frontend\FrontendController@atglance')->name('atglance');
+Route::get('workflow_automation_and_data_engineering', 'Frontend\FrontendController@wade')->name('wade');
 Route::get('foundation_committee', 'Frontend\FrontendController@foundationcommittee')->name('foundationcommittee');
 Route::get('executive_committee', 'Frontend\FrontendController@executivecommittee')->name('executivecommittee');
 Route::get('audit_committee', 'Frontend\FrontendController@auditcommittee')->name('auditcommittee');
@@ -93,6 +93,17 @@ Route::group(['middleware'=>'auth'],function (){
         Route::post('/delete/{id}', 'Backend\EtenderController@delete')->name('etenders.delete');
         Route::post('/download', 'Backend\EtenderController@download')->name('etenders.download');
     });
+    Route::prefix ('wde')->group (function () {
+        //wde
+        Route::get('/view', 'Backend\WdeController@view')->name('wdes.view');
+        Route::get('/add', 'Backend\WdeController@add')->name('wdes.add');
+        Route::post('/store', 'Backend\WdeController@store')->name('wdes.store');
+        Route::get('/edit/{id}', 'Backend\WdeController@edit')->name('wdes.edit');
+        Route::post('/update/{id}', 'Backend\WdeController@update')->name('weds.update');
+        Route::post('/delete/{id}', 'Backend\WdeController@delete')->name('weds.delete');
+        Route::post('/download', 'Backend\EtenderController@download')->name('etenders.download');
+    });
+
     Route::prefix ('carriers')->group (function () {
         //slider
         Route::get('/view', 'Backend\CarrierController@view')->name('carriers.view');

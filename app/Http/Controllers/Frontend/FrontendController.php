@@ -7,6 +7,7 @@ use App\Model\Carrier;
 use App\Model\Etender;
 use App\Model\Logo;
 use App\Model\Slider;
+use App\Model\Wde;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -42,9 +43,11 @@ class FrontendController extends Controller
         $data['logo']=Logo::first();
         return view('frontend.pages.ibch_manikgonj',$data);
     }
-    public function atglance(){
+    public function wade(){
         $data['logo']=Logo::first();
-        return view('frontend.pages.atglance',$data);
+        $data['wde']=Wde::first();
+        $data['wde_img']= Wde::all();
+        return view('frontend.pages.workflow_automation_and_data_engineering',$data);
     }
     public function jakat(){
         $data['logo']=Logo::first();

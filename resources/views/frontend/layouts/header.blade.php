@@ -17,19 +17,16 @@
 						<li class="nav-item">
 							<a class="nav-link" href="">About US</a>
 						</li>
-						{{--<li class="nav-item">
-							<a class="nav-link" href="">Automated Test Equipment</a>
-						</li>--}}
 
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Service
+								Services
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Service overview </a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Inspection</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Test&Measurment</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Support</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="{{route('wade')}}">Workflow Automation And Data Engineering </a></li>
+								<li ><a class="dropdown-item" style="color: black" href="">Software Product Engineering</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="">Enterprise Scale Platforms and Framework Development</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="">Applied AI Solutions</a></li>
 
 								{{--<li><hr class="dropdown-divider"><strong style="padding-left: 10px;background-color:green;opacity: 1;">Organizational Structure</strong></li>
 								<li><a class="dropdown-item" href="{{route('foundationcommittee')}}">Foundation Committees</a></li>
@@ -47,28 +44,55 @@
 
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Solutions
+								Technology Expertise
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Aerospace</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Automotive</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}">Manufacturing-B2B</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> Industrial</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> PCB Design & Development Support</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> Proto Product Development Support</a></li>
-								<li ><a class="dropdown-item" style="color: black" href="{{route('atglance')}}"> Portable Test System, Equipment development</a></li>
-
-
+								<li ><a class="dropdown-item" style="color: black" href="">LabView</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="">Full Stack Vevelopment</a></li>
 
 							</ul>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Contract US</a>
-                                                </li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Products
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li ><a class="dropdown-item" style="color: black" href="">Mavis</a></li>
+								<li ><a class="dropdown-item" style="color: black" href="">Digital Product Validation Solutions</a></li>
+								<li><a class="dropdown-item" href="#">DIVE-Waveform Analysis</a></li>
+								<li><a class="dropdown-item" href="#">Protocol Analyzer Solutions</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Company  </a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#"> About Solution </a></li>
+								<li><a class="dropdown-item" href="#"> News & Events &raquo; </a>
+									<ul class="submenu dropdown-menu">
+										<li><a class="dropdown-item" href="#">Corporate Social Responsibility</a></li>
 
+										<li><a class="dropdown-item" href="#">News Letter</a></li>
+										<li><a class="dropdown-item" href="#">Events</a></li>
+									</ul>
+								</li>
+								<li><a class="dropdown-item" href="#"> Blogs </a></li>
+								<li><a class="dropdown-item" href="#"> Case Studies </a></li>
+								<li><a class="dropdown-item" href="#"> Leadership Team </a></li>
+								<li><a class="dropdown-item" href="#"> Careers &raquo; </a>
+									<ul class="submenu dropdown-menu">
+										<li><a class="dropdown-item" href="#">Job Opening</a></li>
+										<li><a class="dropdown-item" href="#">Employee Value Proposition</a></li>
+
+									</ul>
+								</li>
+								<li><a class="dropdown-item" href="#">Privicy Policy</a></li>
+
+							</ul>
+						<li class="nav-item">
+							<a class="nav-link" href="{{route('contact')}}">Contract US</a>
+						</li>
 
 					</ul>
-
 				</div>
 			</div>
 		</nav>

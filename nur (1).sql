@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2024 at 01:28 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Generation Time: Jan 21, 2024 at 01:42 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `website`
+-- Database: `nur`
 --
 
 -- --------------------------------------------------------
@@ -134,7 +134,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (7, '2021_03_29_120002_create_logos_table', 5),
 (8, '2021_03_31_055159_create_sliders_table', 6),
 (9, '2021_03_31_074543_create_etenders_table', 7),
-(10, '2021_04_13_085942_create_carriers_table', 8);
+(10, '2021_04_13_085942_create_carriers_table', 8),
+(13, '2024_01_21_100719_create_wdes_table', 9);
 
 -- --------------------------------------------------------
 
@@ -168,13 +169,9 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `image`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(14, '202104080616s.jpeg', 1, NULL, '2021-04-08 00:16:35', '2021-04-08 00:16:35'),
-(15, '202104080616s1.jpeg', 1, NULL, '2021-04-08 00:16:42', '2021-04-08 00:16:42'),
-(16, '202104080616s2.jpeg', 1, NULL, '2021-04-08 00:16:51', '2021-04-08 00:16:51'),
-(17, '202104080616s3.jpeg', 1, NULL, '2021-04-08 00:16:57', '2021-04-08 00:16:57'),
-(18, '202104080617s4.jpeg', 1, NULL, '2021-04-08 00:17:03', '2021-04-08 00:17:03'),
-(19, '202104080617s5.jpeg', 1, NULL, '2021-04-08 00:17:11', '2021-04-08 00:17:11'),
-(20, '202104080617s6.jpeg', 1, NULL, '2021-04-08 00:17:17', '2021-04-08 00:17:17');
+(21, '202401210538sl1.png', 1, NULL, '2024-01-20 23:38:11', '2024-01-20 23:38:11'),
+(22, '202401210538sl2.png', 1, NULL, '2024-01-20 23:38:27', '2024-01-20 23:38:27'),
+(23, '202401210538sl3.png', 1, NULL, '2024-01-20 23:38:40', '2024-01-20 23:38:40');
 
 -- --------------------------------------------------------
 
@@ -206,11 +203,32 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `usertype`, `name`, `email`, `code`, `role`, `email_verified_at`, `password`, `mobile`, `address`, `gender`, `image`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'Nayeem', 'nayeembd84@gmail.com', NULL, 'Admin', NULL, '$2y$10$k1uBpUIL4/Jh5oc.DPrY7epWNu.ewARbIeZhmfcicj3tQhQMnGodm', '01818811220', 's', 'Male', '202103291109unnamed.jpg', 1, NULL, NULL, '2021-05-06 09:35:51'),
-(6, 'admin', 'rashid', 'r@gmail.com', '1098', 'admin', NULL, '$2y$10$suPGoSmboPlwQRAM.Noo0uJHxUDUAh74pz8TUKVmgb1y3FgnLXeX2', '0144555555', 'd', 'Male', '202103291143images.jpg', 1, NULL, '2021-03-29 05:14:41', '2021-03-29 05:43:43'),
-(10, 'admin', 'Jamil', 'jamil@gmail.com', '8741', 'operator', NULL, '$2y$10$3F9bBW/grBiPMaDYQvLOV.DjM9Ab8NcRl1J1a6Mb5y7xn0uuvvXpm', NULL, NULL, NULL, NULL, 1, NULL, '2021-05-20 18:43:52', '2021-05-20 18:43:52'),
-(11, 'admin', 'Mohammed Azim Chowdhury', 'azim_chy17@yahoo.com', '9096', 'operator', NULL, '$2y$10$v1ZHrKR7N0flXkTlgh7V4.pUKQEcAXJBJSqJT2e4SyGjn3X9nZMX.', '01670421233', 'PPD', 'Male', '202106290821DSC_0226.JPG', 1, NULL, '2021-05-24 12:00:07', '2021-06-29 13:21:40'),
-(12, 'admin', 'Ohidur', 'ibf.engg@gmail.com', '3469', 'operator', NULL, '$2y$10$HB8Aqy5xMrcdWfx0XRflP.kVd1zFPP5RCQRLYnjxdNVFM84N4Fzo.', NULL, NULL, NULL, NULL, 1, NULL, '2021-06-20 14:17:12', '2021-06-20 14:17:12');
+(1, 'admin', 'Nayeem', 'nayeembd84@gmail.com', NULL, 'Admin', NULL, '$2y$10$h3EMrzKz9IPtPFR8BEqdHe.fB1GQBkeC/vvUZEd18F.U.dSaK4mhq', '01818811220', 's', 'Male', '202103291109unnamed.jpg', 1, NULL, NULL, '2021-05-06 09:35:51'),
+(13, 'admin', 'solok', 'contact@weber360.com', '112', 'admin', NULL, '$2y$10$CkMHRxvTbCD2tpjT0B1mX.YogC5I9.gF47FsRlSTK.bzoU.uba.iC', NULL, NULL, NULL, NULL, 1, NULL, '2024-01-21 03:08:55', '2024-01-21 03:08:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wdes`
+--
+
+CREATE TABLE `wdes` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `desc` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  `updated_by` int(11) DEFAULT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=inactive,1=active',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `wdes`
+--
+
+INSERT INTO `wdes` (`id`, `desc`, `image`, `created_by`, `updated_by`, `status`, `created_at`, `updated_at`) VALUES
+(2, 'ইসলামী ব্যাংক বাংলাদেশ। ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।ইসলামী ব্যাংক বাংলাদেশ।মমমমমমমমমইসলামী ব্যাংক বাংলাদেশ।', '202401211031s1.png', NULL, NULL, 1, '2024-01-21 04:31:26', '2024-01-21 06:14:42');
 
 --
 -- Indexes for dumped tables
@@ -266,6 +284,12 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
+-- Indexes for table `wdes`
+--
+ALTER TABLE `wdes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -297,19 +321,25 @@ ALTER TABLE `logos`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `wdes`
+--
+ALTER TABLE `wdes`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

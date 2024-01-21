@@ -23,7 +23,7 @@
 
 </div>
             <!----slider section--->
-{{--@include('frontend.layouts.slider')--}}
+@include('frontend.layouts.slider')
 
             <!--Contact us-->
 
